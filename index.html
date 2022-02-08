@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<header>
+    <div class="topnav">
+        <a class="home" href="index.html">SunbeamCars Inc.</a>
+        <a class="login" href="login.html"><i class="fa fa-fw fa-user"></i> Log in</a>
+      </div>
+</header>
+<body>
+    <div class="container">
+    <img src="images/car-rent.jpg" alt="Rent from us" id="mainimg">
+    <div class="block">
+        <div class="column">
+        <form action="" onsubmit="doSubmit(event)">
+            <label for="date">I pick it up </label>
+            <br>
+            <input id="date" name="date" type="date" value="yyyy-mm-dd" />
+            <br />
+            <label for="people">Number of people:</label>
+            <br>
+            <select name="people" id="people">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+            <br><br>
+            </div>
+            <div class="column">
+            <label for="date">I hand it in </label>
+            <br>
+            <input id="date" name="date" type="date" value="yyyy-mm-dd" />
+            <br />
+            
+            <label for="suitcases">Number of suitcases</label>
+            <br>
+            <select name="suitcases" id="suitcases">
+              <option value="0">0 - only a bag</option>
+              <option value="1 suitcase">1 suitcase</option>
+              <option value="2 suitcases">2 suitcases</option>
+              <option value="3 suitcases">3 suitcases</option>
+              <option value="4 suitcases">4 suitcases</option>
+            </select>
+            <br><br>
+        </div>
+          </form>
+    <input type="submit" value="Submit">
+    </div>
+</div>
+<h3>Hi!
+    Sorry that you need to look at this even for a second,<br>
+    Covid got the better of me and currently I don't understand anything. <br>
+    It will change until we meet next time, but still, sorry for this...</h3>
+<h2>Cars</h2>
+    <div id="output"></div>
+
+    <div class="cars">
+        <div class="carscolumn">
+            <img src="images/citroen.jpg" alt="Citroen" height="50px">
+        </div>
+        <div class="carscolumn">
+            <h2>Citroen Grand C4 Picasso</h2>
+        </div>
+        <div class="carscolumn">
+            <h3>Catgory: Minivan</h3>
+            <h3>People: 7</h3>
+            <h3>Suitcases: 4</h3>
+        </div>
+        <div class="carscolumn">
+            <h3>Price: DKK1420.00</h3><br>
+        <input type="button" value="Book now">
+        </div>
+        
+    </div>
+    <div class="cars">
+        <div class="carscolumn">
+            <img src="images/Mazda-3.jpg" alt="Mazda-3" height="50px">
+        </div>
+        <div class="carscolumn">
+            <h2>Mazda-3</h2>
+        </div>
+        <div class="carscolumn">
+            <h3>Catgory: Sedan</h3>
+            <h3>People: 4</h3>
+            <h3>Suitcases: 2</h3>
+        </div>
+        <div class="carscolumn">
+            <h3>Price: DKK1170.00</h3><br>
+        <input type="button" value="Book now">
+        </div>
+        
+    </div>
+    <div class="cars">
+        <div class="carscolumn">
+            <img src="images/suzuki.jpg" alt="Suzuki Swift" height="50px">
+        </div>
+        <div class="carscolumn">
+            <h2>Suzuki Swift</h2>
+        </div>
+        <div class="carscolumn">
+            <h3>Catgory: Sedan</h3>
+            <h3>People: 4</h3>
+            <h3>Suitcases: 2</h3>
+        </div>
+        <div class="carscolumn">
+            <h3>Price: DKK850.00</h3><br>
+        <input type="button" value="Book now">
+        </div>
+        
+    </div>
+
+<script src="dt.js"></script>
+<script src="js.js"></script>
+</body>
+</html>
